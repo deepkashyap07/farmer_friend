@@ -33,7 +33,7 @@ export default function Predict() {
     })
 
     try {
-      const res = await fetch('http://localhost:8000/predict', {
+      const res = await fetch('https://farmer-friend-k55l.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
